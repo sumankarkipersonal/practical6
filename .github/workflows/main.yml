@@ -1,1 +1,20 @@
 
+name: My First Workflow
+
+on:
+  push:
+
+jobs:
+  basic-info:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print a welcome message
+        run: echo "Hello! My GitHub Actions workflow is working."
+
+      - name: Print repository name
+        run: echo "Repository: ${{ github.repository }}"
+
+      - name: Print branch name
+        run: echo "Branch: ${{ github.ref_name }}"
+
