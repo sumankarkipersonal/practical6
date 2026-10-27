@@ -13,8 +13,7 @@ jobs:
         run: echo "Hello! My GitHub Actions workflow is working."
 
       - name: Print repository name
-        run: echo "Repository: ${{ github.repository }}"
+        run: 'echo "Repository: ${{ github.repository }}"'
 
       - name: Print branch name
-        run: echo "Branch: ${{ github.ref_name }}"
-
+        run: 'echo "Branch: ${{ github.ref_name }}"'
